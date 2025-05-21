@@ -33,6 +33,7 @@ controls:
     - path: ../lib/set-timezone.script.sh
     - path: ../lib/set-wallpaper.ps1
     - path: ../lib/update-dns.sh
+    - path: ../lib/zoom-config.sh
 team_settings:
   secrets:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
@@ -44,3 +45,8 @@ team_settings:
       policy_ids: 
         - 531
 software:
+  zoom.yml:
+    url: https://zoom.us/client/latest/ZoomInstallerIT.pkg
+    self_service: true
+    post_install_script:
+      path: ../lib/zoom-config.sh
