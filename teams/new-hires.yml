@@ -45,15 +45,7 @@ team_settings:
       policy_ids: 
         - 531
 software:
-  zoom.yml:
-    url: https://zoom.us/client/latest/ZoomInstallerIT.pkg
-    self_service: true
-    post_install_script:
-      path: ../lib/zoom-config.sh
-  
-  cloudflare-warp.yml:
-    url: https://downloads.cloudflareclient.com/v1/download/windows/version/2025.2.664.0
-    self_service: true
-    post_install_script:
-      path ../lib/cloudflare-warp.yml
+  packages:
+    - path: ../lib/zoom-config.sh
+    - path: ../lib/cloudflare-warp.yml
       
