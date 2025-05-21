@@ -45,6 +45,5 @@ team_settings:
         - 531
 software:
   packages:
-    - path: ../lib/zoom-config.sh
     - path: ../lib/cloudflare-warp.yml
       
